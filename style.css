@@ -1,0 +1,42 @@
+body {
+	padding: 0;
+	margin: 0 auto;
+	max-width: 52em;
+	color: #222222;
+	font-family: "Gill Sans", sans-serif;
+}
+
+nav {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	padding-right: 1.5em;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #222222;
+}
+
+nav ul li a:hover {
+	color: #777777;
+}
+
+pre {
+	background-color: #ebebeb;
+	padding: 10px;
+}
+
+footer {
+	margin-top: 1.5em;
+}
