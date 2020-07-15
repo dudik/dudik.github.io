@@ -6,6 +6,10 @@ body {
 	font-family: "Gill Sans", sans-serif;
 }
 
+h2 {
+	font-size: 1.25em;
+}
+
 nav {
 	margin-top: 1em;
 	margin-bottom: 1.5em;

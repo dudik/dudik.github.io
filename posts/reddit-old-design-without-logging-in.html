@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Reddit old design without logging in</title>
+</head>
+
+<body>
+
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="https://github.com/dudik">Github</a></li>
+			<li><a href="../contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+<article>
+
+<h1>Reddit old design without logging in</h1>
+
+<p>Posted on 07-15-2020</p>
+
+<h2>The not so great solution</h2>
+
+<p>You can use the &#8220;old&#8221; prefix by replacing &#8220;www&#8221; with &#8220;old&#8221; like this: <a href="https://old.reddit.com/">https:&#47;&#47;old.reddit.com&#47;</a>.
+This has to be done manually or using some kind of extension or user script.
+Instead of trusting an unknown source you can use a simple bookmarklet:</p>
+
+<pre><code>javascript:location.assign("https:&#47;&#47;old.reddit.com" + window.location.pathname)
+</code></pre>
+
+<p>This bookmarklet will redirect you to the old design when you click on it.
+Just drag and drop <a href="javascript:location.assign(%22https://old.reddit.com%22%20+%20window.location.pathname)">this link</a> to your bookmarks and it&#39;s ready to use.</p>
+
+<h2>The best solution</h2>
+
+<p>The best because under the hood it does the same thing as opting out of the redesign with an account through the settings. After it&#39;s done it doesn&#39;t require any manual intervention.</p>
+
+<p>These steps are specific to Firefox, but it should be similar in other browsers:</p>
+
+<ol start="1">
+<li>Go to <a href="https://reddit.com">reddit.com</a> (it has to be the main page so it works on the entire site).</li>
+<li>Open the Storage Inspector (Shift + F9) or open the Developer Tools (Ctrl + Shift + I) and click on the Storage tab.</li>
+<li>Click on the <code>https:&#47;&#47;www.reddit.com</code> section under Cookies.</li>
+<li>Add a new item by clicking on the + button or by right click -&#62; Add Item.</li>
+<li>Change the name of the newly created item to &#8220;redesign_optout&#8221; and the value to &#8220;true&#8221;.</li>
+<li>I also recommend setting the &#8220;Expires &#47; Max-Age&#8221; value to something ridiculous like the year 2100 so the cookie doesn&#39;t expire.</li>
+</ol>
+
+</article>
+
+<footer>
+	<p>If you have any comments or questions feel free to <a href="../contact.html">contact me</a>.</br>
+	Generated with <a href="../vbbs.sh">this shell script</a>.</p>
+</footer>
+
+</body>
+
+</html>
