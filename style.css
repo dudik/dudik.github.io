@@ -39,6 +39,7 @@ nav ul li a:hover {
 pre {
 	background-color: #f0f0f0;
 	padding: 10px;
+	overflow-x: auto;
 }
 
 code {
