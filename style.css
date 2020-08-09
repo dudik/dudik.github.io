@@ -37,8 +37,12 @@ nav ul li a:hover {
 }
 
 pre {
-	background-color: #ebebeb;
+	background-color: #f0f0f0;
 	padding: 10px;
+}
+
+code {
+	background-color: #f0f0f0;
 }
 
 footer {
