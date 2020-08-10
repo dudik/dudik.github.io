@@ -1,9 +1,39 @@
+@media only screen and (max-width: 600px) {
+	body {
+		padding: 10px !important;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #2b2b2b;
+		color: #f7f7f7 !important;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		color: #f7f7f7 !important;
+	}
+
+	pre, code {
+		background-color: #393939 !important;
+	}
+
+	a {
+		color: #FFA143 !important;
+	}
+}
+
 body {
 	padding: 0;
 	margin: 0 auto;
 	max-width: 52em;
 	color: #222222;
 	font-family: "Gill Sans", sans-serif;
+}
+
+a {
+	color: #006178;
 }
 
 h2 {
@@ -30,10 +60,6 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	color: #222222;
-}
-
-nav ul li a:hover {
-	color: #777777;
 }
 
 pre {
